@@ -57,6 +57,8 @@ echo -e "${GREEN}READ: bw=${WHITE}${RAND_READ}${RESET}"
 echo ""
 
 # Remove Temp Files
-sleep 2
-rm -f ${MOUNT_POINT}/{rand_read.0.0,rand_write.0.0,seq_read.0.0,seq_write.0.0}
+rm -f $MOUNT_POINT/rand_read.0.0
+rm -f $MOUNT_POINT/rand_write.0.0
+rm -f $MOUNT_POINT/seq_read.0.0
+rm -f $MOUNT_POINT/seq_write.0.0
 echo -e "${YELLOW}✅ Test complete. Temporary files removed.${RESET}"
